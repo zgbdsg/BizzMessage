@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+	<!--
+		<beans xmlns="http://www.springframework.org/schema/beans"
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xsi:schemaLocation= "http://www.springframework.org/schema/beans
+		http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+	-->
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+
+	<!-- 业务常量定义  id="Constants" 不能改 -->
+	<bean id="Constants" class="com.xbinfosys.util.Constants">
+		<property name="config">
+			<map>
+			    <entry key="RunModel" value="NONE" />  <!-- WebServer, MQ, ALL默认值  -->
+			    <entry key="WebPort" value="8288" />
+			    <entry key="MQ_URI" value="tcp://localhost:6166" />
+				<entry key="NameSpace" value="商品房预售" />
+				<entry key="TimeOut" value="30000" />
+				<entry key="ConcurrentCapability" value="3" />
+				<entry key="Port" value="45544"/>
+				<entry key="MAPS_HOST_IP" value="9.234.3.43"/>
+				<entry key="MAPS_HOST_PORT" value="45544"/>
+				<entry key="MERCHANT_HOST_PORT" value="11111"/>
+			</map>
+		</property>
+	</bean>
+
+	<bean id="ClassMapper" class="com.xbinfosys.util.ClassMapper">
+		<property name="config">
+			<map>
+			</map>
+		</property>
+		
+       <property name="reqStringReplace">
+            <map>
+            </map>
+        </property> 
+        <property name="repStringReplace">
+            <map>
+            </map>
+        </property>     		
+	</bean>
+	
+    
+	<import resource="pojos_BizAppContainer.xml" />
+<!--	<import resource="jobs.xml"/> -->
+
+
+</beans>

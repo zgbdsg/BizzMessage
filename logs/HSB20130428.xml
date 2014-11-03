@@ -1,0 +1,104 @@
+<log date="2013-04-28 00:00:00" JGYH="HSB">
+	<jiaokuan>
+		<item>
+			<JKTZSBH>201304281010920</JKTZSBH>
+			<JKJE>100000.00</JKJE>
+			<ZHYBDZSJ>2013-04-28 15:33:55</ZHYBDZSJ>
+		</item>
+		<item>
+			<JKTZSBH>201304281051309</JKTZSBH>
+			<JKJE>100000.00</JKJE>
+			<ZHYBDZSJ>2013-04-28 15:20:10</ZHYBDZSJ>
+		</item>
+		<item>
+			<JKTZSBH>201304281054311</JKTZSBH>
+			<JKJE>100000.00</JKJE>
+			<ZHYBDZSJ>2013-04-28 15:33:16</ZHYBDZSJ>
+		</item>
+	</jiaokuan>
+	<bofu>
+		<item>
+			<BFTZSBH>2013042810</BFTZSBH>
+			<BFJE>90000.00</BFJE>
+			<BFSJ>2013-04-28 15:37:41</BFSJ>
+		</item>
+		<item>
+			<BFTZSBH>2013042811</BFTZSBH>
+			<BFJE>45000.00</BFJE>
+			<BFSJ>2013-04-28 15:38:10</BFSJ>
+		</item>
+		<item>
+			<BFTZSBH>2013042811</BFTZSBH>
+			<BFJE>45000.00</BFJE>
+			<BFSJ>2013-04-28 15:38:22</BFSJ>
+		</item>
+		<item>
+			<BFTZSBH>2013042812</BFTZSBH>
+			<BFJE>30000.00</BFJE>
+			<BFSJ>2013-04-28 15:38:33</BFSJ>
+		</item>
+		<item>
+			<BFTZSBH>2013042812</BFTZSBH>
+			<BFJE>30000.00</BFJE>
+			<BFSJ>2013-04-28 15:38:39</BFSJ>
+		</item>
+		<item>
+			<BFTZSBH>2013042812</BFTZSBH>
+			<BFJE>30000.00</BFJE>
+			<BFSJ>2013-04-28 15:38:46</BFSJ>
+		</item>
+	</bofu>
+	<tuikuan>
+		<item>
+			<TKTZSBH>T2013042810</TKTZSBH>
+			<TKJE>10000.00</TKJE>
+			<TKSJ>2013-04-28 15:34:55</TKSJ>
+		</item>
+		<item>
+			<TKTZSBH>T2013042811</TKTZSBH>
+			<TKJE>10000.00</TKJE>
+			<TKSJ>2013-04-28 15:35:48</TKSJ>
+		</item>
+		<item>
+			<TKTZSBH>T2013042812</TKTZSBH>
+			<TKJE>10000.00</TKJE>
+			<TKSJ>2013-04-28 15:36:17</TKSJ>
+		</item>
+	</tuikuan>
+	<zhanghu>
+		<item>
+			<ZH>1111111111111111111</ZH>
+			<YE>0.00</YE>
+			<shouxufei>0.00</shouxufei>
+			<dingji>
+				<chu>0.00</chu>
+				<ru>0.00</ru>
+				<yue>0.00</yue>
+			</dingji>
+		</item>
+		<item>
+			<ZH>12109843201304285130</ZH>
+			<YE>19930.00</YE>
+			<shouxufei>70.00</shouxufei>
+			<dingji>
+				<chu>30000.00</chu>
+				<ru>0.00</ru>
+				<yue>20000.00</yue>
+			</dingji>
+		</item>
+		<item>
+			<ZH>3333333333333333</ZH>
+			<YE>0.00</YE>
+			<shouxufei>0.00</shouxufei>
+			<dingji>
+				<chu>0.00</chu>
+				<ru>0.00</ru>
+				<yue>0.00</yue>
+			</dingji>
+		</item>
+	</zhanghu>
+	<buming>
+		<ruzhang></ruzhang>
+		<chuzhang></chuzhang>
+	</buming>
+</log>

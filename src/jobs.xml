@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation=
+    	"http://www.springframework.org/schema/beans  http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+
+<!-- ************************************************************************************************* -->    
+  <bean id="job4001房产局对账" class="预售监管.service.Job房产局对账">
+     <property name="对账模式" value="TODAY" /> <!-- TODAY, YESTODAY   --><!-- TODAY是默认值 ,本行没有也行 -->
+  </bean>
+  <bean id="methodInvokingJob4001房产局对账"
+        class="org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean">
+    <property name="targetObject" ref="job4001房产局对账" />
+    <property name="targetMethod" value="_do" />
+  </bean>
+
+  <bean id="cronTriggerJob4001房产局对账"    class="org.springframework.scheduling.quartz.CronTriggerBean">
+    <property name="jobDetail" ref="methodInvokingJob4001房产局对账" />
+    <!--  run every morning at 晚上11:00 -->
+    <property name="cronExpression" value="0 0 23 * * ?" />
+  </bean> 
+    
+    
+    
+        
+<!-- *************************************************************************************************** -->        
+  <bean    class="org.springframework.scheduling.quartz.SchedulerFactoryBean">
+  
+    <property name="triggers">
+      <list>
+        <ref bean="cronTriggerJob4001房产局对账" />
+      </list>
+    </property>
+  </bean>
+  
+</beans>

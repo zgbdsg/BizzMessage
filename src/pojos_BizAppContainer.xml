@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+	<bean id="MessageDataUtil" class="com.unionpay.common.iso8583.MessageData"  init-method="init">
+	   <property name="tblPosOrgKeyService" ref="IPosOrgKeyServiceImpl"/>
+	   <property name="domainService" ref="IDomainServiceImpl"/>
+	</bean>
+    <bean id="IPosOrgKeyServiceImpl" class="com.xbinfo.mapssp.vo.dao.TblPosOrgKeyServiceImpl" >
+    </bean>
+    <bean id="IDomainServiceImpl" class="com.xbinfo.mapssp.vo.dao.TblDomainServiceImpl" >
+    </bean>
+	
+	  
+	  
+	<bean id="posSPServer" class="com.xbinfo.mapssp.server.KKMultiServer" init-method="init">
+    </bean>  
+	
+	<!-- HN淮南、 BB蚌埠、WH芜湖 -->
+	<bean id="posSPLogic"  class="com.xbinfo.mapssp.server.SPLogicHN" >
+    </bean>
+	  
+	  
+	  
+</beans>
