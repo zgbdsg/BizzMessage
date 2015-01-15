@@ -159,11 +159,11 @@ public class JobNotification {
 		keys.add("" + 2);
 		keys.add("" + 3);
 
-		values.add(userName);
+		values.add(StringUtils.gbEncoding(userName));
 		values.add("" + usrId);
 		values.add("" + grpId);
 		values.add("" + type);
-		values.add("o" + topic);
+		values.add("" + topic);
 		values.add(p1);
 		values.add(p2);
 		values.add(p3);
